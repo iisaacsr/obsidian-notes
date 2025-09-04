@@ -31,7 +31,7 @@ String dans Java est une `Class`, pas un primitive type
 
 # Déclaration de variables:
 
-```
+```java
 *Programmeur* programmeur
 ```
 
@@ -53,7 +53,7 @@ Contrairement aux données primitives, la déclaration d'une variable `Object` n
 
 Ce qui mène à l'<u>Instanciation</u>  <--- Opérateur `new`
 
-```
+```java
 programmeur = *new* Programmeur();
 ```
 
@@ -71,14 +71,14 @@ Tous les objets `Programmeur` sont des références à la classe, l'objet `Progr
 
 Pour accéder aux données (attributs) d'un objet, on utilise l'opérateur point `.`
 
-```
+```java
 public static void main (String[] args)
 {
 	Programmeur programmeur = new Programmeur();
 	
 	programmeur *.* nom = "Annie"
 	
-	System *.* out *.* println("Le nom du programmeur est " +                      programmeur *.* getNom() + " !");
+	System *.* out *.* println("Le nom du programmeur est " +                          programmeur *.* getNom() + " !");
 }
 ```
 
@@ -92,7 +92,7 @@ J'améliore ma classe `Programmeur` pour  permettre à un `Programmeur` de maitr
 
 L'attribut ``langage`` de `Programmeur` devient un tableau de `String` et s'appelle maintenant ``langages``
 
-```
+```java
 public class Programmeur()
 {
 	String nom;
@@ -105,7 +105,7 @@ L'Encapsulation consiste à cacher les données (attributs) d'un `Object` au mon
 
 Pour cela, on déclare des **attributs privés**
 
-```
+```java
 public class Programmeur()
 {
 	*private* String nom;
@@ -126,7 +126,7 @@ Il existe deux types de méthodes d'accès
 - Méthodes d'accès en écriture (setters)
 	Commence par set (`set____`)
 
-```
+```java
 public class Programmeur
 {
 	private String nom;
@@ -172,7 +172,7 @@ En Java, les attributs sont initialisés par défaut (null).
 
 Pour programmer et déboguer, la classe `Programmeur` doit fournir des méthodes d'instance `programmer`, et `déboguer`
 
-```
+```java
 public class Programmeur
 {
 	private String nom;
@@ -214,7 +214,7 @@ En Java, un `constructor` est une `method` qui :
 -  Ne `return` aucun résultat (même pas void)
 -  Peut avoir des paramètres
 
-```
+```java
 public class Programmeur
 {
 	private String nom;
@@ -245,7 +245,7 @@ public static void main (String[] args)
 
 # Recap
 
-```
+```java
 package com.isylvainroy.classes
 
 public class Programmeur
