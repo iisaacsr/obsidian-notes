@@ -5,7 +5,7 @@
 # OOP Datatypes
 
 -  `int`
-	Nombre entier
+	Nombre entier, 32 bytes (4 bits)
 -  `double`
 	Nombre rééel
 -  `double[]` (array)
@@ -37,7 +37,11 @@ String dans Java est une `Class`, pas un primitive type
 
 #todo research this v
 
-Quand on déclare une variable dans Java, le compiler détermine la quantité de mémoire à allocate pour la variable elle-même. Il, ensuite, détermine le nombre de valeurs possibles dans celle-ci, et il détermine les opérations possibles 
+1- Quand on déclare une variable dans Java, le compiler détermine la quantité de mémoire à allocate pour la variable elle-même. Par ailleurs, plusieurs différents types, soit  `int` , `long`, `string` nécessitent différents niveaux de mémoire (RAM), comme par exemple, un `int` qui nécessite 4 bits ou 32 bytes. 
+
+2- Il, ensuite, détermine le nombre de valeurs possibles dans celle-ci. Donc, pour l'exemple d'un `int`, le compiler détermine le nombre de valeurs possibles (ou le range), qui est de -2,147,483,648 jusqu'à 2,147,483,648 (qui est déterminé à cause de la grosseur utilisé en mémoire, justement)
+
+3 - Et le compiler détermine les opérations possibles avec la variable déclarée, donc pour un `int`, ce serait toute opération arithmétique nécessaire et toute méthode instanciée qui utiliserait cette variable / qui est utilisée par cette variable dans le cas d'un `Object` 
 
 
 `int` is 4 bytes (4 octets).
