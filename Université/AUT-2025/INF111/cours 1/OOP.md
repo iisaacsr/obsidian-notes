@@ -1,13 +1,12 @@
 
-### Please keep in mind that this file is meant for Java. OOP should (and could) be replaced with Java any time
-
+Please keep in mind that this file is meant for Java. OOP should (and could) be replaced with Java any time
 
 # OOP Datatypes
 
 -  `int`
-	Nombre entier, 32 bytes (4 bits)
+	Nombre entier, 4 bytes (32 bits)
 -  `double`
-	Nombre rééel
+	Nombre rééel, 8 bytes (64 bits)
 -  `double[]` (array)
 	Tableau de nombres réels
 -  `Object`
@@ -27,28 +26,19 @@
 
 [CamelCase, https://en.wikiversity.org/wiki/CamelCase]
 
-String dans Java est une `Class`, pas un primitive type
-
 # Déclaration de variables:
 
 ```java
 *Programmeur* programmeur
 ```
 
-#todo research this v
+1- Quand on déclare une variable dans Java, le compiler détermine la quantité de mémoire à allocate pour la variable elle-même. Par ailleurs, plusieurs différents types, soit  `int` , `long`, `string` nécessitent différents niveaux de mémoire (RAM), comme par exemple, un `int` qui nécessite 4 bytes ou 32 bits. 
 
-1- Quand on déclare une variable dans Java, le compiler détermine la quantité de mémoire à allocate pour la variable elle-même. Par ailleurs, plusieurs différents types, soit  `int` , `long`, `string` nécessitent différents niveaux de mémoire (RAM), comme par exemple, un `int` qui nécessite 4 bits ou 32 bytes. 
-
-2- Il, ensuite, détermine le nombre de valeurs possibles dans celle-ci. Donc, pour l'exemple d'un `int`, le compiler détermine le nombre de valeurs possibles (ou le range), qui est de -2,147,483,648 jusqu'à 2,147,483,648 (qui est déterminé à cause de la grosseur utilisé en mémoire, justement)
+2- Il, ensuite, détermine le nombre de valeurs possibles dans celle-ci. Donc, pour l'exemple d'un `int`, le compiler détermine le nombre de valeurs possibles (ou le range), qui est de -2,147,483,648 jusqu'à 2,147,483,648 (qui est déterminé à cause de la grosseur utilisée en mémoire, justement)
 
 3 - Et le compiler détermine les opérations possibles avec la variable déclarée, donc pour un `int`, ce serait toute opération arithmétique nécessaire et toute méthode instanciée qui utiliserait cette variable / qui est utilisée par cette variable dans le cas d'un `Object` 
 
-
 `int` is 4 bytes (4 octets).
-
-#todo research this v
-
-TOUTE ESPACE MÉMOIRE DANS JAVA EST 4 BYTEs ?
 
 `int` is always signed (no need for `int` or `uint` like in c++)
 
@@ -166,11 +156,14 @@ public static void main (String[] args)
 
 ```
 
-En Java, les attributs sont initialisés par défaut (null).
+## Valeurs par défaut des attributs
 
--  Les objets sont initialisés à `null` par défaut
+-  Les `Object` sont initialisés à `null` par défaut
+	`String` étant un `Object`, celui-ci est initialisé à null
 -  Les types numériques sont initialisés à `0`.
--  Les types caractéristiques sont initialisés à `""` (? #todo)
+	Un `double`, étant un nombre à virgule, est initialisé à `0.0`
+-  Une `bool` est initialisée à `false`
+-  Un `char` est initialisé à `\u0000` (caractère null)
 
 # Méthodes d'instance
 
@@ -193,17 +186,12 @@ public class Programmeur
 ```
 
 ## Valeurs et références
-
-#todo maybe needs more development
  
 Il existe une différence fondamentale entre les données primitives et les `Object` ; une variable primitive désigne la valeur de la donnée, tandis qu'un `Object` désigne l'adresse mémoire de l'`Object`
 
 Donc, une variable de type `Object` est une référence vers un objet.
 
-Donc,
-
-*Une affectation de données primitives est une affectation de valeurs*, mais
-*Une affection d'`Object` est une affectation de références*
+**[[Valeurs et références dans Java|Voir plus de détails]]**
 
 # Constructeurs
 
@@ -280,12 +268,12 @@ public class Programmeur
 	
 	public String getNom()
 	{
-		return nom;   <---- MÉTHODE GETTER	
+		return nom;
 	}
 	
 	public void setNom(String newName)
 	{
-		nom = newName;   <---- MÉTHODE SETTER	
+		nom = newName;
 	}
 	
 	// MÉTHODES D'INSTANCE
