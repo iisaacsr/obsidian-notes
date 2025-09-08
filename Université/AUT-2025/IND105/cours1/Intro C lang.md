@@ -11,7 +11,11 @@ int main(int argc, char *argv[]){           //  <---- ou void
 
 ### To compile :
 
-Using `gcc`
+Pour compiler notre code C, nous allons utiliser un compiler appelé GCC, ou GNU Compiler Collection. Il sert pratiquement, à décompiler notre code source (C, dans ce cas) en code système. 
+
+GCC supporte plusieurs langages différents ! (cpp, objective-c, fortran, golang etc...)
+
+	Using `gcc`
 
 In `cmd`
 
@@ -29,11 +33,24 @@ Hello World !
 ()
 ```
 
-#todo lookup
-You can also do `gcc -01`, `-02`, `-03` to optimise compile time. Don't do it for debug tho
+You can also do `gcc -O1`, `-O2`, `-O3` (not zero, o) to optimise your code at compile time. . Don't do it for debug though, because the optimization slows down compile time, to favour optimized code.
 
-#todo lookup c makefile (cmake) ? (to compile easier)
+The base GCC command will be with the `-O0` tag, which will be the one closest to our source code, which will be faster compiling, and what we want for debug.
 
+#### make & Makefiles (misc)
+
+`make` est un outil servant à build des programmes et librairies par du code source en lisant des fichier qu'on appelle des `Makefiles`.
+
+Un fichier `Makefile` est un fichier text spécifique, servant à indiquer des règles de build. Chaque règle a :
+
+-  Quelle **cible** build, (un fichier `.exe`, une library, etc... )
+-  Les **dépendances** de la cible, (fichiers sources, fichiers headers, etc...)
+-  Les **arguments d'extra** pour le build, par exemple
+```cmd
+gcc -c ma_source_1 -o ma_source_o
+```
+
+`make` et la création de `Makefile`s  sert à automatiser la compilation du code (C, dans notre cas), et personnaliser rapidement notre commande de build sans devoir le faire manuellement à chaque fois
 
 ## Étapes de compilation
 
