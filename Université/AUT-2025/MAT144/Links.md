@@ -1,0 +1,2 @@
+[P1 PDF link](https://ena.etsmtl.ca/pluginfile.php/1446790/mod_resource/content/50/MAT_144_P1_mai_2022.pdf)
+[P2 PDF link](https://ena.etsmtl.ca/pluginfile.php/967710/mod_resource/content/49/Partie_2_fevrier_2022.pdf)
