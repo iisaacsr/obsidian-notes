@@ -14,7 +14,7 @@ Par contre, une classe mère ne peut pas être instanciée en tant que la classe
 Le but d'hériter d'une classe mère, est de rajouter des paramètres, méthodes à la classe fille qui ne serait pas attribué à la classe mère 
 -  Un `Étudiant` pourrait avoir la méthode `etudier()`, le paramètre `note`, etc ...
 
-En java, nous héritons en utilisans `extends` pour hériter d'une classe mère
+En java, nous héritons en utilisant `extends` pour hériter d'une classe mère
 
 ```java
 class Etudiant extends Personne
@@ -22,11 +22,12 @@ class Etudiant extends Personne
 
 L'héritage crée des *familles d'objet* partageant le même type de base
 
+
 ![[animaux.gif]]
 
-#todo 
+## Exemple
 
-Voici une exemple de projet de base d'application mobile utilisant Java, où un peut voir que (hérite ...)
+Voici une exemple de projet de base d'application mobile utilisant Java, où un peut voir que la classe `MainActivity` hérite de `AppCompatActivity`. C'est utile, parce qu'`AppCompatActivity` est une classe fondamentale pour toute application Android java, contenant des milliers de LOC qui gèrent plusieurs choses, comme le cycle de vie de l'activité (on peut voir avec `onCreate`), la gestion de vues, etc ...
 
 ```java
 package com.stoudeft.monapplicationmobile;

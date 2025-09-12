@@ -1,12 +1,12 @@
+
 Polymorphisme = *poly* + *morphe* = plusieurs formes. La polymorphisme sert aux objets de se comporter différement selon le contexte. Il est intimement lié au concept d'héritage.
 
 Le polymorphisme contient plusieurs sous-concepts; 
 
-#todo add links
--  Surchage ( overloading )
--  Redéfinition ( overriding )
+-  [Surcharge (Overloading)](#Surchage(overloading))
+-  [Redéfinition (Overriding)](#Redéfinition(overriding))
 -  Méthodes virtuelles et liaison dynamique
--  Classes et méthodes abstraites (`abstract`)
+-  [Classes et méthodes abstraites (`abstract`)](#Méthodes(abstraites))
 
 ![[polymorphism.png]]
 
@@ -21,28 +21,33 @@ car.speed();   // <-- dans ce cas, on retourne 60km/h (vu que c'est une Maruti)
 
 ## Surchage (overloading)
 
-Plusieurs méthodes de même nom dans une même classe (chacune avec une signature différente)
-
+Plusieurs méthodes de même nom dans une même classe (à condition que chacun ait une signature différente.) 
 -  Surchage de constructeurs
 -  Surchage de méthodes
 
-#todo complete this
+Le compilateur détermine quelle version de la méthode surchargée doit être appelée en se basant sur les types, et le nombre d'arguments passés lors de l'appel. 
+
+**Le type de retour n'est pas pris en compte dans la signature pour la surchage**
 
 ```java
-public Car() {
+public Car() {  // <--- Constructeur par défaut
 }
 
-public Car(int speed) {
+public Car(int speed) {   // <--- Surchage de constructeur
  this.speed = speed;
 }
 
-public Car(int speed, String name) {
+public Car(int speed, String name) {  // <--- Surchage de constructeur
  this.speed = speed;
  this.name = name;
 }
 
 public double distance(Car car) {
 	return Math.sqrt(Math.pow(abscisse.p.ab))
+}
+
+public double distance(Car currentCar, car otherCar) {
+	// ...
 }
 
 // etc...
