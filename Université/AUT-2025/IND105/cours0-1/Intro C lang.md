@@ -107,9 +107,9 @@ int main(int argc, char *argv[]){
 
 Size of Integer : 4
 Size of Short : 2
-Size of Logn : 8
-Size of Charater : 4
-Size of Float : 1
+Size of Long : 8
+Size of Character : 4
+Size of Float : 4
 Size of Boolean : 1
 
 ()
@@ -204,7 +204,7 @@ tab[1] = 76
 #### Allocation statique :
 
 -  Ambiguë avec l'allocation automatique
-Une allocation statique se produit lorsqu'on utilise le mot clé static, lorsque la variable est globale.
+Une allocation statique se produit lorsqu'on utilise le mot clé `static`, lorsque la variable est globale.
 Elle est allouée dans la section des variables statiques
 
 ```C
@@ -219,7 +219,7 @@ L'espace mémoire est allouée sur la pile du système
 
 #### Allocation dynamique
 
--  La mémoire allouée avec la fonction `malloc()` se trouve dans le *heap*.
+-  La mémoire allouée avec la fonction `malloc()` se trouve dans le *heap* (le tas).
 La mémoire doit être libérée manuellement avec la fonction `free()`
 
 ```C
@@ -295,12 +295,12 @@ Exemple :
 
 ## Structures (struct)
 #todo
-Une structure est un regroupement de plusieurs types de variables.
+Une structure est un regroupement de plusieurs types de variables. Par contre, une fonction ne peut pas être définie à l'intérieur d'une structure (il faudrait qu'elle soit définie hors de la struct !). 
 
 ```C
-struct Point {
-	int x;
-	int y;
+struct cell {
+	int valeur;
+	cell* next;
 }
 ```
 
@@ -309,3 +309,48 @@ struct Point {
 La structure est passée par copie, c'est-à-dire qu'une nouvelle structure est créée et que chacun de ses champs est copié.
 
 **Attention** : Si un des champs est un pointeur, seule l'adresse est copiée. Ainsi, si le contenu de la mémoire pointée est modifé, ce changement affectera à la fois l'original et la copie, car ils partagent la même zone mémoire.
+
+## Déréférencement
+
+#todo needs more clarity
+
+Un déréférencement permet d'obtenir une valeur à l'addresse p
+
+```C
+	printf("ou = %d\n", *(&a)) // <--- Déréférencement
+```
+
+vs référencement
+
+```C
+	int a = 7;  // <---- a = ... #todo
+	printf("@de a = %p\m", &a) // <--- Référencement (obtenir a)
+```
+
+
+# Misc
+
+## Constantes
+
+```c
+#define TAILLE 10;
+
+	int main()
+	{
+		int tab[TAILLE];
+		return 1;
+	}
+```
+
+Si le code se passe bien (tout fonctionne comme il faut), typiquement on retourne 1, mais si ça fonctionne mal (catch quelque chose), on retourne 0
+
+## If blocks
+
+```c
+	if(1 + 1)
+	{
+		// je rentre
+	}
+```
+
+Ce bloc compile, car 1 + 1 = 2, ce qui équivaut à vrai. Tous les nombres entiers équivont à vrai, sauf le nombre 0, qui équivaut à faux.
