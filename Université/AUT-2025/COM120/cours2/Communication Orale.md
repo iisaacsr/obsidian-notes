@@ -120,4 +120,7 @@ Conseils
 À faire avant le prochain cours : lire le texte obligatoire p.13-51
 Relire les consignes et regarder la grille d'évaluation
 
+
+
+
 [EXPOSÉ ORAL À FAIRE](https://ena.etsmtl.ca/pluginfile.php/2337087/mod_resource/content/5/COM120-E%CC%81nonce%CC%81%20expose%CC%81%201.pdf)
