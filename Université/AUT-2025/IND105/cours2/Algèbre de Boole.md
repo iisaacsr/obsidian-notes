@@ -109,3 +109,26 @@ Les verrous permettent de mémoriser des valeurs binaires
 -  Sortie globale du circuit séquentiel soit imprévisible
 
 La conception des bascules vise à corriger ce problème, en établissant un instant précis et prévisible de déclenchement où les valeurs d'entrée seront prises en compte systématiquement
+
+### Circuit de masquage
+
+Le circuit de masquage permet d'effectuer des opérations sur une partie des bits d'un opérande. Un masque est utilisé pour indiquer les bits concernés
+
+Les portes utilisées indiquent l'opération effectuée sur ces bits
+-  XOR : inversement
+-  ET : copie
+
+![[Pasted image 20250922083234.png]]
+
+### Multiplexeur
+
+Le multiplexer à deux entrées est un composant retournant une des deux entrées, grâce à l'entrée de commande.
+
+Si C vaut 1, le multiplexeur retourne B, si C vaut 0, le multiplexeur retourne A
+
+
+### Additionneur
+
+![[Pasted image 20250922085100.png]]
+
+#todo faire circuit séquentiel vs combinatoire

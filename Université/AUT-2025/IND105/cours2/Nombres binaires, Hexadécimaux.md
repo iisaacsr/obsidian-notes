@@ -81,7 +81,7 @@ Autre méthode avec une étape supplémentaire par rapport au complément à 1
 
 ## Nombre à virgule en base binaire
 
-La partie fractionnaire suit la mêke logiqe de la partie entière, chaque vit à la droite de la virgule est divisé par une puissance de deux négatives
+La partie fractionnaire suit la même logique de la partie entière, chaque vit à la droite de la virgule est divisé par une puissance de deux négatives
 
 ## Nombre à virgule flottante
 
