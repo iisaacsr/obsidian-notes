@@ -25,6 +25,12 @@ Lorsqu'on insère un élément dans une liste chainée, on a qu'à créer l'él�
 
 ![[unnamed 1.jpg]]
 
+## Liste doublement chainée
+
+Une liste doublement chainée est similaire à une liste chainée, sauf qu'elle contient un **pointeur vers l'ancien élément** en plus du pointeur vers le prochain.
+
+![[Liste_doublement_chaînée.png]]
+
 ## Misc
 
 En général, l'**accès** et la **recherche** d'un élément est **meilleure** avec un tableau (globalement, à cause de la recherche d'un élément aléatoire non début ou fin), grâce à la recherche dichotomique #todo, mais un liste chainée est meilleure pour tout ce qui est **insertion**, ou **suppression**.
