@@ -83,13 +83,38 @@ void de2bi(unsigned int nb, int* binary) {
 ## Q10
 
 -  Indiquez la représentation binaire des nombres hexadécimale suivants
-	-  (9AB7) = ``
-	-  (10E4FA04)
-	-  (3F)
+	-  (9AB7) = `1001 1010 1011 0111`
+	-  (10E4FA04) = `0001 0000 1110 0100 1111 1010 0000 0100`
+	-  (3F) = `0011 1111`
 
 ## Q11 
 
 -  Réalisez la fonction transformant un nombre entier en héxadécimal
+
+```c
+int main(int argc, char** argv) {
+    int valeur = (int)strtol(argv[1], NULL, 0); // string vers integer
+    // init tableau
+    int tab[SIZETAB]; // 32
+
+    for(int i = 0; i < SIZETAB; i++)
+        tab[i] = 0;
+        
+    hex2bi(valeur, tab);
+
+    for(int i = 0; i < SIZETAB; i++)
+        printf("%d", tab[i]);
+    return 1;
+}
+
+void hex2bi(unsigned int nb, int* binary) {
+    int current_bit = 32;
+    while (nb != 0) {
+        binary[--current_bit - 1] = nb % 2; // le bit;
+        nb = nb / 2;
+    }
+}
+```
 
 ## Q12
 
@@ -109,5 +134,30 @@ void de2bi(unsigned int nb, int* binary) {
 	`unsigned char`= entre 0 et 255
 	`char` = entre -127 et 127 (`0111 111`et `1111 1111`)
 
-## Q15
+## Q15-16-17
 
+-  Représentez l'entier -54 et -821 en signe-valeur absolue (Sign and Magnitude) (représenté en `short`)
+	-54 = `11 0110`
+	-  En short : `0000 0000 0011 0110`
+	-  Sign & magnitude = `1000 0000 0011 0110`
+	-  Complément de 1 = `1111 1111 1100 1001`
+	-  Complément de 2 = `1111 1111 1100 1010`
+	-821 = `0011 0011 0101`
+	-  En short : `0000 0011 0011 0101`
+	-  Sign & Magnitude = `1000 0011 0011 0101`
+	-  Complément de 1 = `1111 1100 1100 1010`
+	-  Complément de 2 = `1111 1100 1100 1011`
+
+## Q18
+
+-  Représentez l'entier -0 sur 4 bits avec les 3 méthodes
+	-  Sign & Magnitude = `1000 0000 0000 0000`
+	-  Complément à 1 = `1111 1111 1111 1111`
+	-  Complément à 2 = `0000 0000 0000 0000`
+
+## Q19
+
+-  Indiquez l’entier relatif représenté, si la représentation est en Sign and Magnitude, complé-ment à 1 et complément à 2  pour la séquence suivante : `(9A)(hex)`
+	-  9A en décimal = `1001 1010` (un nombré décimal = 4 bits)
+	-  Complément à 1 = `0110 0101` = 101 = (-101)
+	-  Complément à 2 = `0110 0110` = 102 = (-102) 

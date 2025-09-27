@@ -42,9 +42,9 @@ Les nombres peuvent s'écrire dans n'importe quelle base, alors il y existe des 
 
 ![[Pasted image 20250915094651.png]]
 
-## Entiers binaires signés et amplitude
+## Entiers binaires signés et amplitude ( Sign & Magnitude )
 
-Pour des entiers binaires signées, il va toujours y avoir un bit utilisé pour le signe, l'autre pour encoder l'entier (amplitude)
+Pour des entiers binaires signées, il va toujours y avoir un bit utilisé pour le signe, l'autre partie (les autres bits) pour encoder l'entier (amplitude)
 -  Bit de signe 0 : positif
 -  Bit de signe 1 : négatif
 
@@ -75,7 +75,7 @@ Autre méthode avec une étape supplémentaire par rapport au complément à 1
    pas mal la même chose)
    
 -  Convertir en base 2
--  Trouver le complément à deux des nombre à soustraire
+-  Trouver le complément à 2 des nombre à soustraire
 -  Réaliser l'addition avec la notation en complément à 2
 -  Ne pas prendre en compte le débordement
 
