@@ -5,9 +5,9 @@ Une des fonctionnalités de l'ordinateur est le stockage
 	Programme informatique
 
 Le stockage des données et des instructions est soit ensemble
-	Architecture de von Neumann
+	[[Architecture de von Neumann]]
 ou séparé
-	Architecture de Harvard
+	[[Architecture de Harvard]]
 
 ### Module : Mémoire
 

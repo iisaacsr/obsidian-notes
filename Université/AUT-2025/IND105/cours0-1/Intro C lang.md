@@ -112,7 +112,7 @@ Size of Character : 1
 Size of Float : 4
 Size of Boolean : 1
 
-Donc, c'est x octets^2 - 1 (signe)
+Donc, c'est x (nb octet * 8, donc bits) ^2 - 1 (signe)
 
 ()
 ```

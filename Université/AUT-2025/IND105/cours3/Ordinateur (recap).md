@@ -29,9 +29,9 @@ La fonction basqiue d'un ordinateur est l'exécution d'un programme, consistant 
 **L'architecture** informatique fait référence à la conception, à la structure et au fonctionnement d'un système informatique.
 
 L'ordinateur est composé de plusieurs composants
--  Processeur
--  Mémoire
--  Périphérique entrée/sortie
+-  [[Architecture de Processeurs|Processeur (CPU)]]
+-  [[Mémoire]]
+-  [[Mémoire#Module Entrée-Sortie (I/O)|Périphérique entrée/sortie]]
 
 L'architecture régit comment les composants interagissent ensemble et exécute des tâches. 
 
@@ -62,9 +62,9 @@ Architecture informatique = plusieurs niveaux d'abstraction :
 	-  Assembleur : traduction du langage en code machine exécutable
 #### Modules à haut niveau d'un ordinateur
 
--  Processeur (CPU (Central Processing Unit))
--  Mémoire (RAM, ROM, Disk, cache, _registres_)
--  Périphériques Entrée sortie (I/O)
+-  [[Architecture de Processeurs|Processeur]] (CPU (Central Processing Unit))
+-  [[Mémoire|Mémoire]] (RAM, ROM, Disk, cache, _registres_)
+-  [[Mémoire#Module Entrée-Sortie (I/O)|Périphérique entrée/sortie (I/O)]]
 	Ces modules peuvent être composée de plusieurs éléments (CPU par exemple)
 -  Système de communication
 	Pour que tout puisse communiquer ensemble (bus de communication)
