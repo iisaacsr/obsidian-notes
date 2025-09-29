@@ -108,7 +108,7 @@ int main(int argc, char *argv[]){
 Size of Integer : 4 octets
 Size of Short : 2
 Size of Long : 8
-Size of Character : 4
+Size of Character : 1
 Size of Float : 4
 Size of Boolean : 1
 
