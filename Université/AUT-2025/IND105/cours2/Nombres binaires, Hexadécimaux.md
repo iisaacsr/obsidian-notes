@@ -29,8 +29,6 @@ La base 16 est composée de 16 chiffres : { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, 
 
 Un nombre de base 16 pourra s'écrire `0xDA57 = (DA57)v16`
 
-#todo 
-
 Pour représenter une séquence binaire en séquence hexadécimale
 -  Regrouper les bits par 4 (le groupe de poids fort peut contenir moins de 4 bits)
 -  Si le groupe de poids fort a moins de 4 chiffre, rajouter des 0
@@ -105,9 +103,6 @@ Applications du biais en addiotionnant 2k^-1 -1 à l'exposant où k représente 
 ![[Pasted image 20250915111042.png]]
 ## Puissances de 2
 
-#misc
-
 ![[puissances-2.jpg]]
 
-
-PEUT-ÊTRE FAIRE SLIDE 76
+(PEUT-ÊTRE FAIRE SLIDE 76)
