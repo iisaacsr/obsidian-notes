@@ -1,0 +1,1 @@
+Transfer these (.css) files into your .obsidian/snippets folder if necessary
