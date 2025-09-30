@@ -55,7 +55,7 @@ On peut alors avoir une discussion préalable sur les aspects favorisant le trav
 
 ## Résolution de conflits (Thomas-Kilmann)
 
-![[Pasted image 20250919200543.png]]
+![[schema thomas-killmann conflits.png]]
 
 #### Rivaliser
 
@@ -105,7 +105,7 @@ Quand faut-il compromettre ? (faire / chercher un compromis)
 
 ## Équation de l'énergie d'une équipe
 
-![[Pasted image 20250919201553.png]]
+![[equation-energie-equipe-com120.png]]
 
 #### Énergie de production (Ep)
 

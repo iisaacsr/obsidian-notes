@@ -29,7 +29,7 @@ Lorsqu'on insère un élément dans une liste chainée, on a qu'à créer l'él�
 
 Une liste doublement chainée est similaire à une liste chainée, sauf qu'elle contient un **pointeur vers l'ancien élément** en plus du pointeur vers le prochain.
 
-![[Liste_doublement_chaînée.png]]
+![[liste doublement chainéee.png]]
 
 ## Misc
 

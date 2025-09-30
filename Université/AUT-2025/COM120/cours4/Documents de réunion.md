@@ -78,8 +78,8 @@
 
 **Exemple** 
 
-![[Pasted image 20250926181222.png]]
-![[Pasted image 20250926181402.png]]
+![[compterendu1-com120.png]]
+![[compterendu2-com120.png]]
 
 ## Procès-verbal p.664-666
 

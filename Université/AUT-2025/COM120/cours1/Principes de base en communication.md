@@ -11,7 +11,7 @@ La communication peut être schématisée
 
 #todo #exam
 
-![[Pasted image 20250905193243.png]]
+![[schema shannon weaver wiener.png]]
 
 Code = vocabulaire, culture, langage, etc...
 Référent = famille ? amis ? collèges (changement de comportement selon)
@@ -22,7 +22,7 @@ Bruit = Trop fort (on s'entend pas), peut pas parler clairement (bibliothèque)?
 
 #todo #exam
 
-![[Pasted image 20250905193531.png]]
+![[schema dapres jakobson.png]]
 
 Le contexte influence le destinateur, message, destinataire.
 

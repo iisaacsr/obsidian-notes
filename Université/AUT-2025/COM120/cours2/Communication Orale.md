@@ -34,7 +34,7 @@ Pour bien préparer un exposé, il faut :
 	Est-ce que la source est à jour ?
 -  Bâtir le plan
 	(faire quelque chose de ce genre)
-	![[Pasted image 20250912184114.png]]
+	![[tableau expose oral com120.png]]
 -  Adapter le plan pour le présenter à l'auditoire
 
 ## Préparer un support visuel
@@ -113,14 +113,3 @@ Conseils
 -  Se détendre, respirer, avoir des pensées positives
 -  Soigner la posture (s'ancrer, dos droit, épaules relâchées, mains, position du corps)
 -  Éviter les tics, manies, etc ...
-
-
-## Conclusion
-
-À faire avant le prochain cours : lire le texte obligatoire p.13-51
-Relire les consignes et regarder la grille d'évaluation
-
-
-
-
-[EXPOSÉ ORAL À FAIRE](https://ena.etsmtl.ca/pluginfile.php/2337087/mod_resource/content/5/COM120-E%CC%81nonce%CC%81%20expose%CC%81%201.pdf)

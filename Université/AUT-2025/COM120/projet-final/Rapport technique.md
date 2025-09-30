@@ -1,4 +1,4 @@
-![[Pasted image 20250926182609.png]]
+![[schema rapport technique com120.png]]
 
 **Objectif général**
 -  Approfondir les connaissances liées au problème décrit par le client
@@ -54,7 +54,7 @@ Dans le rapport :
 **1.1.3 - Écart à combler**
 -  Description de l’objectif général (B) identifié et énumération des objectifs spécifiques.
 
-![[Pasted image 20250926183306.png]]
+![[situation ideale com120.png]]
 
 #### Situation idéale (1.1.2)
 
@@ -153,12 +153,12 @@ relatives à un lave-linge :
 		Détermination et pondération des critères d'évaluation
 		Paragraphe d'introduction et de la subdivision. Description des subdivisions à suivre.
 	-  **1.3.1**
-		![[Pasted image 20250926190123.png]]
+		![[critere d'evaluation (1) com120.png]]
 		Un paragraphe par critère, ordonnés du critère le plus important  au critère le moins important. Il n’est pas nécessaire de pondérer dans le paragraphe. Il est important d’expliquer les choix en utilisant des arguments intelligents et basés sur des faits. Il est également possible de détailler certains critères en les divisant en sous-critères. +résumé sous forme de tableau à deux colonnes. 
 		
 		Cette démarche critériée réduit le risque que la solution finale soit le fruit d'une décision subjective fondée sur des préjugés favorables, des goûts personnels, des procédés dont on a l'habitude, etc
 	-  **1.3.2**
-		![[Pasted image 20250926185645.png]]
+		![[critere evaluation (2) + ponderation com120.png]]
 		La pondération traduit en chiffres le fait que les critères n'ont pas  tous la même importance et qu'ils obéissent à une certaine hiérarchie. Pour établir la pondération, vous pouvez travailler avec un système de poids relatif ou un système de pourcentage.
 		
 		À chaque critère, demandez-vous: quelle est l'importance de ce  critère par rapport aux autres? Est-il plus important? Moins important? Aussi important?
@@ -175,4 +175,4 @@ relatives à un lave-linge :
 -  Poids maximal pour un seul critère : 40 % (pas obligé, mais recommandé)
 #### Exemple (masque pour la COVID)
 
-![[Pasted image 20250926185941.png]]
+![[exemple critere (3) com120.png]]
