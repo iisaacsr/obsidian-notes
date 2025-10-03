@@ -3,6 +3,8 @@ Un domaine booléeen est un ensemble mathématique des deux éléments `B = {VRA
 
 ## Portes logiques
 
+Une #todo **table de vérité** est un tableau qui récapitule toutes les possibilités d'une loi.
+
 Les portes logiques sont des circuits qui possèdent des sorties et des entrées sur lesquelles on va récupérer des bits.
 
 Les entrées ne sont rien d'autre que des "fils" conducteurs sur lesquels on envoie un bit
@@ -60,7 +62,7 @@ Les circuits logiques peuvent être séquentiels ou combinatoires
 	![[Pasted image 20250915112600.png]]
 
 
-# Lois composés 
+# Lois composées 
 
 Une loi est dite composée si elle combine plusieurs opérations logiques pour aboutir au résultat.
 -  OR avec NON --> NOR
