@@ -93,11 +93,11 @@ Ainsi, l’objectif principal du mandat est de recommander une ou plusieurs solu
 
 **Dans le rapport** 
 
--  1.2 - Inventaire des données et des restrictions
+-  **1.2** - Inventaire des données et des restrictions
 	Paragraphe d'introduction de la subdivision. Description des subdivisions à suivre.
-- 1.2.1 - Liste des données
+- **1.2.1** - Liste des données
 	Liste numérotée des données relatives aux solutions à proposer.
--  1.2.2 - Liste des restrictions
+-  **1.2.2** - Liste des restrictions
 	Liste numérotée des contraintes qui élimineront d’office certaines solutions
 
 #### Inventaire des données (1.2.1)
