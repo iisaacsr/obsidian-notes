@@ -50,6 +50,31 @@ Le cache contient une copie de certaines données présentes dans la RAM. Le cho
 -  Algorithme de Bélàdyl algorithme LRUM algorithme LRU, etc... (*algorithme de remplacement de ligne de cache*)
 -  Une mise à jour des données présentes dans le cache se fait lors d'un accès dans la RAM (cache miss)
 
+## Hiérarchie de la mémoire cache
+
+![[cache hierarchy ind105.png]]
+
+Pour trouver un compromis entre le prix et l'efficacité, plusieurs niveaux de cache sont utilisés
+-  Les caches L1, L2, L3
+-  Le cache L1 est plus rapide que le L3, il est plus petit
+-  Le cache L1 est le plus près du CPU
+
+Les hiérarchies de la mémoire cache utilise généralement de la SRAM (rapide, onéreuse, peu dense)
+
+Il peut exister du cache avec du DRAM embarqué (eDRAM)
+
+![[cache hierarchy literally ind105.png]]
+
+Un niveau de cache peut être lié à un seul coeur.
+
+Un autre niveau de cache peut être partagé entre les coeurs.
+
+![[ind105 cache triangle.png]]
+
+#### Accès d'une donnée dans le cache
+
+On vérifie sa présence dans le L1, le L2, puis le L3. sinon, la donnée est prise dans la RAM
+
 ## Défaut de cache (cache miss)
 
 Le défaut de cache peut avoir plusieurs origines
@@ -114,7 +139,7 @@ Mémoire cache = invisible
 
 ## Cache à correspondance établie
 
-bloc mémoire = adresse / taille LDC ou |LDC|
+`bloc mémoire = adresse / taille LDC`
 
 ou *direct-mapped cache*
 
@@ -136,4 +161,154 @@ Une ligne de mémoire principale peut être copiée dans n'importe quelle ligne 
  
 Le *tag* de l'adresse est comparé au tag de toutes les lignes de la mémoire cache. En cas de *hit*, l'octet est retourné grâce à son *data index* (offset) dans le bloc de données
 
+#### Index
+
+`index = bloc mémoire % nombre d'ensembles`
+
 ## Cache associatif par ensembles
+
+#todo prob add pictures of exemples and stuff
+
+ou **set-associative-cache**
+
+La cache est divisée en `n` ensembles (*ways*) de lignes de cache
+
+Un mot est mis d'abord dans un des ensembles puis est mis **dans n'importe quelle ligne de cache**.
+
+Un cache à **correspondance établie** correspond au cas où il y a autant d'ensemble que de lignes de caches
+
+Un cache **totalement associatif** correspond au cas à un seul ensemble
+
+![[cache associatif par esnemble ind105.png]]
+
+Cette méthode essaie d'allier la vitesse de la cache à correspondance directe et l'efficacité de la cache totalement associative
+-  Taux de *cache miss* relativement fiable
+
+La consommation d'énergie est moins importante également par rapport à la cache totalement associative
+-  Comparaison de quelques étiquettes uniquement au lieu de toutes les étiquettes
+
+
+## Algorithmes de remplacement de ligne de caches
+
+La cache peut trop se remplir. Dans le cas où il est plein, des lignes de caches doivent être **supprimées** pour pouvoir faire de la place.
+
+Un type de cache ne peut pas avoir de mécanismes pour évincer des lignes de cache
+-  Le cache à correspondance établie, car le remplacement est obligatoirement mis à un endroit précis dans le cache
+-  Les autres caches peuvent avoir des algorithmes de remplacement
+
+Les mécanismes de remplacement de ligne de cache doivent théoriquement évincer des données inutiles
+-  Pour optimiser l'utilisation de la mémoire
+-  Minimiser les défauts de pages
+
+Il existe différents algorithmes de remplacement de lignes de caches
+
+Les **algorithmes de remplacements pratiques** sont basés sur des **heuristiques** et des **prédictions** pour déterminer quelles informations conserver dans le cache
+-  Ils ne peuvent pas atteindre le même niveau d'efficacité que l'algorithme optimal de Bèlàdy.
+
+L'**efficacité** d'un algorithme de cache est généralement évalulée par l'expérimentation et la comparaison de ses performances par rapport à d'autres stratégies de mise en cache dans ces cas d'utilisation spécifiques.
+
+#### Algorithme de Bèlady
+
+C'est l'algorithme de remplacement le plus efficace.
+
+Il consiste à toujours éliminer les informations qui ne seront pas nécessaires pendant le plus longtemps à venir
+-  Notion de connaissance future
+
+Ce résultat optimal est calculé en se basant sur la connaissance future des modèls d'accès à la mémoire, le rendant **théorique et non-praticable**
+
+
+#### Remplacement aléatoire
+
+(dans un cache totalement associatif qui est **plein** et qui a vécu un **cache miss**)
+
+La ligne de cache est choisie (pour remplacement) au hasard.
+
+-   Mécanisme naïf, certaines données utiles pourraient être rapatriées. 
+-  Contre-intuitif
+
+Néanmoins, le remplacement aléatoire montre des performances plutôt bonnes
+-  Les défauts de cache ne suivent pas une logique temporelle
+-  Ils sont aussi relativement peu nombreux
+
+Dans le cas d'un petit cache, technique à proscrire
+-  Les défauts de caches seront plus nombreux
+
+**Exemple**  #todo
+
+![[remplacement aléatoire cache ind105.png]]
+
+#### Remplacement FIFO
+ou *First In First Out*
+
+![[remplacement FIFO ind105.png]]
+
+La donnée la plus ancienne du cache est effacée
+-  Simple à implémenter
+
+Technique à proscrire dans le cas d'un [[Mémoire cache#Cache associatif par ensembles|cache associatif par ensembles]]
+-  *Anomalie de Bélàdy*
+
+**Exemple** #todo 
+
+![[exemple remplacement FIFO ind105.png]]
+
+#### Remplacement LRU
+ou *Last Recently Used*
+
+Supprime la donnée la moins utilisée récemment
+-  Une donnée utilisée récemment a des fortes chances d'être de nouveau voulue ...
+-  Ainsi, le LRU supprime la donnée la moins utilisée
+
+Cette technique doit avoir un mécanisme qui étudie l'évolution du nombre d'utilisations des données
+-  Complese à réaliser
+
+##### Exemple
+
+![[ind105 exemple LRU MRU LFU.png]]
+
+#### Remplacement MRU
+ou *Most Recently Used*
+
+Supprime la donnée utilisée la plus récemment
+
+##### Exemple
+
+![[ind105 exemple LRU MRU LFU.png]]
+
+#### Remplacement LFU
+ou *Least Frequently Used*
+
+Le remplacement LFU doit implémenter un compteur d'utiliastion pour chaque donnée
+
+Le compteur se fait sur X dernières données
+
+##### Exemple
+
+![[ind105 exemple LRU MRU LFU.png]]
+
+## Performance des mémoires caches
+
+Analyse de la performance des mémoire caches : 
+
+-  **Latence**
+	Temps entre la demande d'une demande de donnée et l'arrivée de la première donnée
+
+-  **Débit**
+	Flux de données transmises
+
+-  **Efficacité**
+	Capacité à empêcher des accès mémoires RAM (dépend du taux du débit)
+
+
+Taux de succès (hit ratio) Ts = pourcentage d'accès de méoire qui ne déclenche pas de défaut de cache
+
+Taux de succès Td : = pourcentage d'accès de mémoire qui entraîne un défaut de cache
+
+![[performance ind105 cache.png]]
+
+Latence
+
+Tc = latence cache
+Tm = latence RAM
+
+![[latence cache ind1-05.png]]

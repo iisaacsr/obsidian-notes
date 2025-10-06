@@ -48,9 +48,9 @@ Une mémoire volatile, ayant besoin d'être alimentée est soit
 
 ![[Pasted image 20250922110831.png]]
 
-##### Exemple caches
 
-![[Pasted image 20250922110923.png]]
+## [[Mémoire cache]]
+
 
 #### Capacité
 
