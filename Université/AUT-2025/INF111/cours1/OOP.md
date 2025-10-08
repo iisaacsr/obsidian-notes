@@ -129,12 +129,12 @@ public class Programmeur
 	
 	public String getNom()
 	{
-		return nom;   <---- MÉTHODE GETTER	
+		return nom; //  <---- MÉTHODE GETTER	
 	}
 	
 	public void setNom(String newName)
 	{
-		nom = newName;   <---- MÉTHODE SETTER	
+		nom = newName; //  <---- MÉTHODE SETTER	
 	}
 	
 }
@@ -143,9 +143,9 @@ public static void main (String[] args)
 {
 	Programmeur programmeur = new Programmeur();
 	
-	programmeur.setNom("Karl");  <---- UTILISATION SETTER
+	programmeur.setNom("Karl");  // <---- UTILISATION SETTER
 	
-	System.out.println("Le nom du programmeur est " +                      programmeur.getNom() + " !")   <-- UTILISATION GETTER
+	System.out.println("Le nom du programmeur est " +                                  programmeur.getNom() + " !")   // <-- UTILISATION GETTER
 }
 
 ()
@@ -178,7 +178,7 @@ public class Programmeur
 	
 	...
 	
-	public void programmer()  <--- MÉTHODE D'INSTANCE
+	public void programmer()  // <--- MÉTHODE D'INSTANCE
 	{
 		System.out.println("Je programme !");  
 	}
@@ -213,14 +213,14 @@ public class Programmeur
 	private String courriel;
 	private String[] langages;
 	
-	public Programmeur()     <--- CONSTRUCTOR SANS PARAM
+	public Programmeur()  //   <--- CONSTRUCTOR SANS PARAM
 	{
 		nom = "Karl";
 		courriel = "karl@mail.com";
 		lanages = ["cpp", "ex", "js"];
 	}
 	
-	public Programmeur(String nom)   <-- CONSTRUCTOR W/PARAM
+	public Programmeur(String nom) //  <-- CONSTRUCTOR W/PARAM
 	{
 		nom = nom;
 		courriel = "karl@mail.com";
