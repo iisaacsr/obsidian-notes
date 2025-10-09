@@ -46,7 +46,7 @@ Une mémoire volatile, ayant besoin d'être alimentée est soit
 -  Une mémoire peut être écrite
 	Mémoire RAM (Random Access Memory)
 
-![[Pasted image 20250922110831.png]]
+![[hiérarchie mémoire ind105.png]]
 
 
 ## [[Mémoire cache]]

@@ -1,5 +1,5 @@
 
-![[Pasted image 20250929093122.png]]
+![[architecture de harvard ind105.png]]
 
 Mise en place pour la première fois en 1944 à Harvard, pour l'ordianteur **Mark I**
 
