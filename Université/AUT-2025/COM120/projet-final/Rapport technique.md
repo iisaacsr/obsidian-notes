@@ -176,3 +176,115 @@ relatives à un lave-linge :
 #### Exemple (masque pour la COVID)
 
 ![[exemple critere (3) com120.png]]
+
+## Barème (1.4)
+
+Un barème est
+
+-  Basé sur des repère (quantitatifs ou qualitatifs), mis en rapport avec une échelle de satisfaction pour aboutir à un résultat chiffré
+-  Utilisé, dans sa version transformée (matrice décisionnelle), au moment de la prise de décision
+-  Bâti en utilisant les critères rédigés à l'étape précédente. Chaque critère aura un barème spécifique qui permet d'évaluer la performance d'une solution par rapport à ce critère précis
+
+-  Articulé sur des échelles de satisfaction appropriés selon le type de critère. Dans le cas d'un critère qualitatif, il faut articuler le barème sur des échelles qualitatives
+	Par exemple, s’il faut évaluer le critère « esthétique » :
+	-  « très beau », « beau », « banal », « laid », « très laid »
+	Il est aussi possible d’utiliser le degré de satisfaction :
+	-  « très grande satisfaction », « grande satisfaction »,
+	-  « satisfaction moyenne », « satisfaction faible », « satisfaction très faible »,
+	-  « insatisfaction complète »
+
+#### Barème de base
+
+![[com120 barème 1.png]]
+
+#### Quantitatif
+
+
+![[com120 barème 2.png]]
+
+#### Qualitatif
+
+![[com120 barème 3.png]]
+
+#### Pièges à éviter
+
+-  Ne pas prévoir de méthode quantitatives pour évaluer un critère qualitatif
+-  Ne pas prévoir de 0%
+-  Ne pas diviser également les résultats chiffrés
+-  Ne pas diviser également les repères (qualitatifs ou quantitatifs) sans justification ou argumentation pertinente
+-  Avoir des chevauchements dans les repères
+
+# Étude de faisabilité
+
+-  Dans le rapport
+	-  2.1 Recherche de solutions
+		2.1.1 à 2.1.X - Description écrite de chaque solution retenue, incluant les avantages, les inconvénients et, si disponible, une représentation graphique.
+	-  2.2 Étude des options envisagées
+		-  2.2.1 -  Aspect physique ou technique de chaque solution
+		-  2.2.2 -  Aspect économique de chaque solution
+		-  2.2.3 - Aspect temporel de chaque solution
+		-  2.2.4 - Aspect environnemental de chaque solution
+
+## Exemple pour la section 2.1.1 (REM)
+
+**Avantages**
+-  Efficacité prouvée lors de projets précédents
+-  Rapidité de mise en place
+-  Impact nul sur la fréquence de passage du REM
+
+**Inconvénients**
+-  Impossibilité d'installer la solution à certains endroits en raison de la structure souvenant le REM
+-  Efficacité pouvant être affectée par le développement urbain
+-  Coût élevé
+
+![[COM120 2.1.1 exemple.png]]
+
+#### Étude des options envisagées : aspect physique ou technique
+
+**Questions possibles pour établir la faisabilité physique ou technique d'une solution**:
+
+1.  Cette solution viole-t'elle une ou plusieurs loi(s) de la nature ? 
+2.  Le niveau de performance de cette solution sera-t'il adéquat dans le contexte de ce problème?
+3.  Est-ce suffisant pour faire face aux compétiteurs ? 
+4.  Cette solution peut-elle être réalisée, considérant le talent des employés du client et les équiments disponibles dans son entreprise ? 
+5.  Le produit sera-t'il fiable dans les conditions d'utilisation normales ?
+6.  Le serat'il dans des conditions anormales ?
+7.  Satisfait-il aux exigences minimales établies lors de la formulation du problème ?
+8.  Le confort des utilisateurs de la machine ou de l'équiment est assurée ?
+
+9.  Se peut-il que des interactions entre les diverses composantes amènent des complications?
+10.  Les composantes seront-elles facilement accessibles pour l’entretien?
+11.  Les pièces seront-elles disponibles rapidement et à un coût acceptable?
+12.  La technologie du produit ou du système à réaliser est-elle connue (ou du niveau) des gens devant le construire et l’entretenir?
+13.  L’usage du produit ou du système se fait-il dans des conditions extrêmes ou inhabituelles de température, d’humidité ou autre?
+14.  Le produit ou le système peut-il s’adapter à des changements futurs? Est-il modifiable?
+
+#### Étude des options envisagées : aspect économique
+
+**Questions possibles pour établir la faisabilité économique d’une solution :**
+
+1.  Y a-t-il suffisamment de capital dans l’entreprise pour financer un tel projet jusqu’à ce qu’il soit opérationnel?
+2.  Le coût de fabrication vous permettra-t-il de faire un profit raisonnable tout en étant compétitif?
+3.  Le personnel spécialisé nécessaire à votre solution sera-t-il disponible au moment désiré?
+4.  Suffira-t-il à la tâche?
+5.  Faudra-t-il embaucher du personnel supplémentaire?
+6.  Faudra-t-il investir pour acheter des composantes sur le marché?
+
+#### Étude des options envisagées : aspect temporel
+
+**Questions possibles pour établir la faisabilité temporelle d'une solution :**
+
+1.  L’équipe actuelle peut-elle respecter le calendrier fixé si l’on choisit cette solution?
+2.  Aurez-vous le temps de recruter du nouveau personnel et de le former pour implanter rapidement votre produit ou votre système?
+3.  Le système ou le produit atteindra-t-il le marché à la période propice de demande des consommateurs?
+4.  La nouvelle technologie nécessaire à cette solution sera-t-elle disponible à temps?
+
+#### Étude des options envisagées : aspect environnemental
+
+**Questions possibles pour établir la faisabilité environnementale d’une solution :**
+
+1.  Avec cette solution, l’usager sera-t-il en sécurité? Le produit ou le système est-il conçu pour être à toute épreuve? Autrement dit, résistera-t-il à un emploi abusif ou forcé sans devenir dangereux?
+2.  Le niveau de pollution (bruits, polluants chimiques, poussières, etc.) respectera-t-il les normes en vigueur?
+3.  L’esthétique sera-t-elle acceptable pour la population ou pour l’usager?
+4.  Tient-on compte des facteurs humains (ou des règles de l’ergonomie) dans les opérations ou dans les utilisations?
+5.  La population acceptera-t-elle ce produit ou ce système dans son environnement?

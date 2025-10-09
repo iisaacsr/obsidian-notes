@@ -21,7 +21,7 @@ Donc, une variable de type `Object` est une référence vers un objet.
 
 *Une affection d'`Object` est une affectation de références*
 
-Utilisons la classe [Programmeur](OOP#Recap)
+Utilisons la classe [Programmeur](OOP.md#Recap)
 
 ```java
 
