@@ -1,4 +1,4 @@
-![[Pasted image 20250929092154.png]]
+![[architecture von neumann ind105.png]]
 
 L'architecture de von Neumann est basée sur 3 concepts
 

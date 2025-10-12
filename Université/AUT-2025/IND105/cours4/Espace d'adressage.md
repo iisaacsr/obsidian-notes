@@ -5,7 +5,7 @@ L'adresse représente un emplacements unique où la donnée peut être lue
 
 Pour différencier les adresses, chaque adresse est une suite de bits unique, exprimé en hexacédimal.
 
-#todo architecture ancienne & noveulle
+#todo architecture ancienne & nouvelle
 
 ## Mot mémoire
 

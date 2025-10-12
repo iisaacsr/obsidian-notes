@@ -2,7 +2,7 @@
 
 Processeur ou CPU (Central Processing Unit)
 
-Le CPU est composé
+Le CPU est composé de :
 -  Unité de contrôle
 	Contrôlant le CPU, donc l'ordinateur
 -  Unité Arithmétique Logique (UAL)
@@ -66,6 +66,8 @@ Sa période, appelée **cycle d'horloge** (clock clycle), détermine la fréquen
 Le choix de la durée du cycle d'horloge doit être fait en tenant compte du temps de réponse des portes logiques utilisées dans le circuit.
 
 Aujourd'hui, le cycle d'horloge est approximativement le même pour des processeurs d'ordinateurs. (environ 3.5 GHz)
+
+1 Hz = 1 seconde^-1
 
 On pourrait aller plus haut, mais le processeur va surchauffer.
 
