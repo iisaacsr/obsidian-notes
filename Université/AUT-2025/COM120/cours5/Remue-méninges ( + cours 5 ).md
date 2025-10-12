@@ -15,7 +15,7 @@ Travail préparatoire individuel de chaque participant :
 #### Règles du remue-méninges
 
 -  Il faut nommer une animatrice ou un animateur qui gèrera les interactions au cours de la séance
--  Il n'y a pas dem auvais idée : il faut éviter de juger (positivement ou négativement) les idées des autres
+-  Il n'y a pas de mauvaise idée : il faut éviter de juger (positivement ou négativement) les idées des autres
 	-  Si quelqu’un doute de la pertinence d’une idée, il est préférable de se taire ou de questionner la personne qui a suggéré l’idée pour s’assurer de l’avoir bien comprise et que le jugement est fondé. Il sera possible d’exprimer le jugement plus tard
 -  Il faut imposer un temps limite à la séance pour éviter de divaguer et d'alourdir le processus de traitement des idées
 

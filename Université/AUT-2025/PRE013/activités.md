@@ -1,0 +1,1 @@
+https://ena.etsmtl.ca/pluginfile.php/2394260/mod_resource/content/0/Calendrier%20activit%C3%A9s%20-%20automne%202025%20%285%29%20%28ID%201421218%29.pdf
