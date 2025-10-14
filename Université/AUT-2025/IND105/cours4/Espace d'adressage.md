@@ -5,7 +5,17 @@ L'adresse représente un emplacements unique où la donnée peut être lue
 
 Pour différencier les adresses, chaque adresse est une suite de bits unique, exprimé en hexacédimal.
 
-#todo architecture ancienne & nouvelle
+#### Architecture ancienne
+
+**Dans les architectures anciennes**, l'adresse correspond à un [[#Mot mémoire]] d'une certaine taille.
+
+Un mot mémoire possède une adresse qui lui est propre.
+
+## Architecture récente
+
+Dans les architectures récentes (Intel, ARM), l'adresse correspond à un octet en mémoire
+
+La taille de mémoire adressable dépend donc du nombre de bits utilisés pour l'adresse (**les mots mémoires font plus que 1 octet**)
 
 ## Mot mémoire
 

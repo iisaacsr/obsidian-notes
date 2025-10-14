@@ -68,7 +68,7 @@ Pour accéder à la donnée en mémoire, cela se fait par l'adresse (comme en C 
 
 Chaque mot en mémoire est associé à son adresse (le nombre de mot est égal, l'adresse d'un mot suit une contrainte d'alignement)
 
-S'il y a 300 adresses, il faut faire *ceil*(*log*2 300) bits pour coder 300 adresses (2 = exposant bas) #todo
+S'il y a 300 adresses, il faut faire *ceil*(*log*2 300) bits pour coder 300 adresses (2 = exposant bas) 
 
 Donc, il y aura 8,22(...) bits nécessaires pour coder 300 adresses (alors 9 bits)
 
@@ -104,13 +104,24 @@ La capacité est exprimée en bit ou en octet (8 bits), qu'on représente en dé
 
 ### Bus de communications
 
-#todo entire bus module
+Un CPU et la mémoire ne servirait pas à grand-chose si les deux modules ne pouvaient pas communiquer entre-eux. 
+
+La communication se fait à l'aide de **bus de communications**
+
+-  Groupe de lignes électriques qui relie le processeur aux autres modules (comme la mémoire)
+	-  Une ligne = un bit
+	-  Une seule direction à la fois
+	-  Données partent et arrivent en même temps
 
 Différents types de bus
 -  Bus d'adresses (transporte l'emplacement visé par la transaction)
 	Controlé par le processeur, le nombre de lignes détermine la quantité maximum de mémoire que le CPU peut utiliser
 -  Bus de données (transfert de données)
 	Peut circuler dans les deux sens, mais une à la fois
+	
+	Sa taille détermine la grandeur maximale des mots transféré en une fois
+-  Bus de contrôle (contrôle l'utilisation des bus de données et adresses)
+	Ainsi que le contrôle des données, il comporte une horloge permettant la synchronisation des opérations
 
 ### Module: Entrée-Sortie (I/O)
 
