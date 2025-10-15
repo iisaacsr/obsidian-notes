@@ -145,4 +145,4 @@ Efficacité des prédiction
 | ----------------------------------------------------------- | ----------------------------------------------- |
 | Plus d'instructions en exécution parallèle                  | Une erreur de prédiction est plus coûteuse      |
 | Montée en fréquence du processeur facilitée                 | Plus d'opération en cours d'exécution à annuler |
-| Gain en nombre d'instructions exécutées pour un temps donné |                                                 |
+| Gain en nombre d'instructions exécutées pour un temps donné | Chemin de données beaucoup plus complexe        |
