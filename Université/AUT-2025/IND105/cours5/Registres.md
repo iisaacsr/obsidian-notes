@@ -6,7 +6,7 @@ La mémoire est petite, mais très rapide
 
 #### Comment sont-ils réalisés ?
 
-Un registre est un ensemble de [[Algèbre de Boole#Bascule|bascules]](mémoire 1 bit), synchronisé par une horloge
+Un registre est un ensemble de [[Algèbre de Boole#Bascule|bascules]](mémoire élémentaire à 1 bit), synchronisé par une horloge
 
 Un régime de `N` bits comporte donc `N` bascules
 

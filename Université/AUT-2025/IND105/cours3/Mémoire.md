@@ -56,7 +56,7 @@ Une mémoire volatile, ayant besoin d'être alimentée est soit
 
 La **capacité** correspond à la taille d'une mémoire. La mémoire est divisée en N mot mémoire
 -  Possédant une taille fixe M
-La capacité C correspond au nombre de mots multipliée par la taille d'un mote
+La capacité C correspond au nombre de mots multipliée par la taille d'un mot
 
 `C = N * M`
 

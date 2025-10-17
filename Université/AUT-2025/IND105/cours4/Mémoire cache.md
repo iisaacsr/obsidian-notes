@@ -78,7 +78,7 @@ On vérifie sa présence dans le L1, le L2, puis le L3. sinon, la donnée est pr
 ## Défaut de cache (cache miss)
 
 Le défaut de cache peut avoir plusieurs origines
--  Premier accès au cache (la donnée n'étant pas de base dans le cache)
+-  Premier accès d'une donnée au cache (la donnée n'étant pas de base dans le cache)
 	On appelle ça un cold miss, impossible à éviter
 
 Liée à la taille du cache (le cache est trop petit pour stocker les données utilisées), les anciennes données peuvent être supprimées

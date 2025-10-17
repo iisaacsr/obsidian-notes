@@ -27,7 +27,7 @@ La taille du mot mémoire influence la quantité de données qui peuvent être t
 
  Une mémoire avec une taille de mot de 64 bits peut transférer deux fois plus de données en une seule opération qu'une mémoire avec une taille de mot de 32 bits.
 
--  Une architecture de 64 bits a des mmots mémoire de taille 64 bits (8 octets)
+-  Une architecture de 64 bits a des mots mémoire de taille 64 bits (8 octets)
 -  Une architecture de 32 bits a des mots mémoire de taille 32 bits
 -  L'adresse d'un mot doit être un multiple de sa taille (contrainte d'alignement)
 

@@ -1,5 +1,6 @@
 
 Un jeu d'instructions (*instruction set*) est un ensemble d'instructions pouvant être exécuté par un processeur
+
 -  [[Instructions|Instruction]] = format binaire spécifique opcode + opérande
 
 Un jeu d'instruction agit au plus bas de la programmation
@@ -8,6 +9,8 @@ Un jeu d'instruction agit au plus bas de la programmation
 Comme le jeu d'instruction dépend du processeur
 -  Il y en a un pour le processeur
 -  Il y a plusieurs jeux d'instructions sur le marché
+
+Pour trouver le nombre d'instructions uniques = log2 Nb de bits
 
 #### Exemples
 
