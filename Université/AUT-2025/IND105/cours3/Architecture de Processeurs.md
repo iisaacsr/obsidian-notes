@@ -13,12 +13,12 @@ Le CPU est composé de :
 -  Interconnexion CPU
 	Permet la communication entre les 3 modules précédents
 
-Processeur : terme génériquement désignant l'unité de traitement central dans un système informatique, qu'il soit grand ou petit.
+Processeur : terme génériquement désignant l'unité de traitement central dans un système informatique, qu'il soit grand ou petit (processeurs graphiques (gpu), processeurs spécialisés (fpga, asic, dsp, npu...).
 
 -  Applications : Serveurs, sytèmes informatiques haut de gamme
--  Puissance de traitement : Puissance de traitement plus élebée que les microprocesseur
+-  Puissance de traitement : Puissance de traitement plus élevée que les microprocesseurs
 
-Ce terme est si générique qu'on va aussi englober les systèmes sur une puce (system-on-chip)
+Ce terme est si générique qu'on va aussi englober les systèmes sur une puce (system-on-chip, donc des processeurs de téléphones cellulaires)
 
 #### Suite
 
@@ -29,7 +29,7 @@ La version la plus simple est un processeur avec un seul ALU
 
 Ceci n'existe plus aujourd'hui (aucun ordi avec un seul ALU vraiment)
 
-Si l'ordinateur a plusieurs processeurs résidant dans une mpeme puce, chaque unité de traitement (unité de contrôle, ALU, registres) est **un coeur**
+Si l'ordinateur a plusieurs processeurs résidant dans une même puce, chaque unité de traitement (unité de contrôle, ALU, registres) est **un [[Coeur de processeur|coeur]]**
 
 #### Performance
 
@@ -43,15 +43,11 @@ Les performances d'un CPU sont déterminées par une combinaison de facteurs don
 
 CPU : Portion de l'ordinateur récupérant et exécutant les instructions. Il est consisté d'une unité de contrôle, ALU et de registres.
 
-Coeur : Unité de traitement à l'intérieur d'une puce. Équivalent d'un CPU dans un système single-CPU.
-
-Aujourd'hui, les CPU ont plusieurs coeurs (une i9 de génération actuelle a 24 coeurs.
+## [[Coeur de processeur]]
 
 ### Microprocesseur
 
-#todo maybe could add more
-
-Microprocesseur est un processeur miniature et autonome conçu pour être intégré dans des appareils électroniques
+Un microprocesseur est un processeur miniature et autonome conçu pour être intégré dans des appareils électroniques
 
 Comme le "processeur" est un terme générique, un microprocesseur est souvent appelé processeur
 
@@ -96,7 +92,7 @@ Le chemin de donnée comprend
 
 ### Registres
 
-Les registres sont les zones de mémorisants de l'information internes au microprocesseur.
+Les registres sont les zones de mémorisa de l'information internes au microprocesseur.
 
 En d'autres termes, c'est la mémoire interne au processeur. Elle est la plus rapide, mais la plus petite. Elle est couteuse.
 
@@ -150,7 +146,7 @@ Contrôler et réguler la synchronisation des périphériques d'entrée et de so
 L'unité arithmétique et logique (UAL) se charge d'effectuer les calculs
 -  ALU : Arithmetic Logical Unit
 
-L'UAL est présent de dtout système
+L'UAL est présent dans tout système
 -  Traite les valeurs d'entrées à l'aide d'instructions (l'unité de contrôle déterminant l'opération)
 -  Stocke la sortie dans une mémoire
 
