@@ -135,7 +135,16 @@ Mémoire cache = invisible
 
 ## Types de cache
 
-#todo a lot of studying req (tag, index, offset)
+Il existe différent types de caches
+
+Possible différence : comment associer le *tag* et sa position dans le cache
+-  Association entre tag et ligne de cache
+
+**Classification des caches**
+-  Cache totalement associatif
+-  Cache à correspondance établie
+-  Cache N-associative
+-  etc...
 
 ## Cache à correspondance établie
 
@@ -143,15 +152,33 @@ Mémoire cache = invisible
 
 ou *direct-mapped cache*
 
--  Chaque mot de la mémoire principale a son endroit associé dans le cache
--  Ainsi une adresse en mémoire ne peut se situer qu'à un endroit dans le cache
-	-  Réalisée avec une opération modulo
-	-  Ligne d'adresse en mémoire principale *j*
-	-  Adresse dans le cache *i*
-		*i* = *j* modulo L
-	-  L correspondant aux nombre de ligne de la cache
+Une adresse en mémoire ne peut se situer qu'à **un seul endroit dans le cache**
+-  Réalisée avec une opération modulo
+-  Ligne d'adresse en mémoire principale `j`
+-  Adresse dans le cache `i`
+-  Nombre de lignes de cache `L`
 
-#todo 
+`i = j % L`
+
+Le *tag*, calculé via l'adresse mémoire est comparé avec le tag dans cette ligne de cache
+-  Si présent, on a cache hit
+
+Sinon, c'est un cache miss et la donnée doit être récupérée via le RAM
+
+![[cache a correspondance etablie ind105.png]]
+
+**Avantages**
+
+Taux de cache hit faible car à chaque fois qu'on rechercher un bloc avec le même *index* set, on doit remplacer la ligne de cache
+
+ Réduction de la complexité pour chercher la donnée dans le cache
+-  Consomattion d'énergie réduite car on sait où se trouve la donnée recherchée
+-  Ainsi, la complexité matérielle est faible car une seule comparaison de tag est suffisante
+
+**Désavantages**
+
+Potentielle collision si deux données nécessaires retournent la même ligne de cache pour être positionnée
+-  Car le cache est plus petit que la mémoire principale
 
 ## Cache totalement associatif
 
@@ -161,13 +188,32 @@ Une ligne de mémoire principale peut être copiée dans n'importe quelle ligne 
  
 Le *tag* de l'adresse est comparé au tag de toutes les lignes de la mémoire cache. En cas de *hit*, l'octet est retourné grâce à son *data index* (offset) dans le bloc de données
 
-#### Index
+Pour trouver un mot dans un cache totalement associatif
+-  Le tag est comparé à **tous** les tags associés dans chaque ligne de cache
+-  Requiert aussi beaucoup de logiques et donc beaucoup d'énergie
+-  Si le cache est grand, la recherche de la ligne de cache est trop complexe
 
-`index = bloc mémoire % nombre d'ensembles`
+Si le tag est présent, on a cache hit
+-  Sinon, *cache miss* et la donnée doit être récupérée dans la RAM
+-  Large variété d'[[#Algorithmes de remplacement de ligne de caches|algorithmes de remplacement]] (car on peut placer n'importe où)
+
+
+![[cache totalement associatif ind105.png]]
+
+**Avantages**
+
+Peut offrir une flexibilité pour placer et remplacer les données ([[#Algorithmes de remplacement de ligne de caches|algorithmes de remplacement]])
+-  Bon taux de cache hit
+
+**Désavantages**
+
+Complexe, coût élevé
+-  On doit comparer **tous** les tags de **toutes** les lignes de cache pour trouver une donnée
+
+Grandeur limitée
+-  Un cache trop grand pourrait ralentir extrêmement (à cause de la recherche de donnée)
 
 ## Cache associatif par ensembles
-
-#todo prob add pictures of exemples and stuff
 
 ou **set-associative-cache**
 
@@ -175,18 +221,30 @@ La cache est divisée en `n` ensembles (*ways*) de lignes de cache
 
 Un mot est mis d'abord dans un des ensembles puis est mis **dans n'importe quelle ligne de cache**.
 
+![[cache totalement associatif ind105-1.png]]
+
+#### Index
+
+`index = bloc mémoire % nombre d'ensembles`
+
+#### Cas spéciaux
+
 Un cache à **correspondance établie** correspond au cas où il y a autant d'ensemble que de lignes de caches
 
 Un cache **totalement associatif** correspond au cas à un seul ensemble
 
+
 ![[cache associatif par esnemble ind105.png]]
+
+**Avantages**
 
 Cette méthode essaie d'allier la vitesse de la cache à correspondance directe et l'efficacité de la cache totalement associative
 -  Taux de *cache miss* relativement fiable
 
+**Désavantages**
+
 La consommation d'énergie est moins importante également par rapport à la cache totalement associative
 -  Comparaison de quelques étiquettes uniquement au lieu de toutes les étiquettes
-
 
 ## Algorithmes de remplacement de ligne de caches
 
