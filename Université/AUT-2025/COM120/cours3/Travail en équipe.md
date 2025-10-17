@@ -52,7 +52,7 @@ On peut alors avoir une discussion préalable sur les aspects favorisant le trav
 -  Détermination des rôles
 -  Sanctions prévues en cas de non-respect du contrat
 -  Signature et consentement
-
+![[schema thomas-killmann conflits.png]]
 ## Résolution de conflits (Thomas-Kilmann)
 
 ![[schema thomas-killmann conflits.png]]

@@ -46,7 +46,7 @@ Elle se repose sur deux principes
 
 ![[Pasted image 20250929150013.png]]
 
-Le cache contient une copie de certaines données présentes dans la RAM. Le choix sur les données préésentes suit une logique algorithmique:
+Le cache contient une copie de certaines données présentes dans la RAM. Le choix sur les données présentes suit une logique algorithmique:
 -  Algorithme de Bélàdyl algorithme LRUM algorithme LRU, etc... (*algorithme de remplacement de ligne de cache*)
 -  Une mise à jour des données présentes dans le cache se fait lors d'un accès dans la RAM (cache miss)
 
@@ -79,19 +79,18 @@ On vérifie sa présence dans le L1, le L2, puis le L3. sinon, la donnée est pr
 
 Le défaut de cache peut avoir plusieurs origines
 -  Premier accès d'une donnée au cache (la donnée n'étant pas de base dans le cache)
-	On appelle ça un cold miss, impossible à éviter
+	On appelle ça un **cold miss**, impossible à éviter
 
 Liée à la taille du cache (le cache est trop petit pour stocker les données utilisées), les anciennes données peuvent être supprimées
 -  On appelle ça un défaut de capacité ou **Capacity Cache Miss**
--  Pour une même capacité de cache, le pourcentage dépend de l'*algorithme de remplacement*
-
+-  Pour une même capacité de cache, le pourcentage dépend de l'*[[#Algorithmes de remplacement de ligne de caches|algorithme de remplacement]]*
 
 ## Ligne de cache
 
 Les lignes de cache sont plus grandes que des mots mémoire
 
-Example d'ordre de grandeur :
-- mot de 64 bits, c'est-à-dire une adresse retourne une série de 64 bits
+Exemple d'ordre de grandeur :
+- 1 mot de 64 bits, c'est-à-dire une adresse retourne une série de 64 bits
 -  Une ligne de cache = 128 octets
 -  Un mot est 16 fois plus petit qu'une ligne de cache
 
@@ -105,7 +104,7 @@ Comment la mémoire cache voit la RAM ?
 
 Mémoire cache = invisible
 -  Pas possible d'expliciter l'utilisation du cache
--  Le cache intercepte les accès mémoire
+-  Le cache **intercepte les accès mémoire**
 -  Exemple
 	-  Interception d'une lecture dans une adresse
 	-  Si le cache, a le contenu de cette adresse, la donnée sera envoyée par le cache
@@ -120,7 +119,6 @@ Mémoire cache = invisible
 	-  Le **tag** permet de savoir si une donnée est dans le cache
 	-  Le restant de l'adresse permet de décrire où est la donnée dans la ligne de cache
 
-
 -  Correspondance 1-1 entre adresse et ligne de cache
 	-  Plutôt correspondance multi-adresses pour une ligne de cache
 	-  Car une ligne de cache est plus grande qu'un mot
@@ -131,7 +129,7 @@ Mémoire cache = invisible
 -  Si une ligne contient ce tag, alors la donnée est dans le cache
 	La ligne de cache est lue depuis le cache et envoyée à un multiplexeur qui sélectionne la donnée à lire dans la ligne de cache (des fois une ligne de cache comportant plusieurs mots mémoires)
 
-![[Pasted image 20250929112325.png]]
+![[logique tag - ldc ind105.png]]
 
 ## Types de cache
 
@@ -273,7 +271,6 @@ Il consiste à toujours éliminer les informations qui ne seront pas nécessaire
 -  Notion de connaissance future
 
 Ce résultat optimal est calculé en se basant sur la connaissance future des modèls d'accès à la mémoire, le rendant **théorique et non-praticable**
-
 
 #### Remplacement aléatoire
 
